@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>IBM Interconnect 2016 - Say something nice</title>
+    <link rel="stylesheet" href="/static/basscss.css" />
+  </head>
+  <body>
+    <section class="flex flex-center center" style="height: 100vh;">
+      <div class="mx-auto">
+        <h1 class="h1 caps mb0 regular">
+          <img src="/static/watson-logo.svg" />
+          <br />
+          Say something nice
+        </h1>
+        <h3>After finishing recording, we will analyse your voice and get the overall sentiment</h3>
+        <p>
+          <button id="record" class="rounded h1 btn btn-primary mt3 mb4 p4" disabled>Record</button>
+          <button id="stop" class="rounded h1 btn btn-primary bg-red mt3 mb4 p4" disabled>&nbsp;Stop&nbsp;</button>
+        </p>
+        <br />
+        <div id="results"></div>
+      </div>
+    </section>
+    <script src="/static/watson-speech.js"></script>
+    <script src="/static/client.js"></script>
+  </body>
+</html>
